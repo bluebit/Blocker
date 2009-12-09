@@ -1,0 +1,28 @@
+This is an implementation of the "Blocker" game.
+It is written entirely in C.
+The main libraries used are pthread.h and curses.h
+
+Prerequisites:
+1. The GCC compiler (or any C compiler)
+2. The development library for libncurses (probably libncurses-dev)
+3. A POSIX-compatible system (i.e. Unix, Linux, Mac OS X)
+
+To install everything you need in Mac OS X, you just have to install Xcode and you're ready to go.
+
+To compile this, run the following command:
+gcc blockers.c -lpthread -lcurses -o blockers
+
+That will compile the source code and create a 'blockers' executable.
+To run the executable, run the following command:
+./blockers
+
+And you're playing.
+
+How to play:
+Use the left and right arrows to move left and right.
+Press 'p' to pause, and then press any key to continue.
+Press 'q' to quit.
+
+I've had some issues running this flawlessly under Mac OS X 10.6. The screen keeps getting messy after a while for some reason. I ran it great under Linux though (Ubuntu). I'll try to figure out what is wrong and fix it.
+
+I will keep working on this game from time to time just for fun and as a learning tool where I can experiment with different ideas and libraries.
